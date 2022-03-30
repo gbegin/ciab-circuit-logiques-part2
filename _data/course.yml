@@ -1,4 +1,4 @@
-title: Introduction aux circuits logiques
+title: Introduction aux circuits logiques, partie 2
 description: Ce cours est une introduction aux circuits logiques, qui sont au coeur de tous les systèmes numériques, du plus simple au plus complexe
 
 modules: [Circuits-séquentiels, Circuits-séquentiels-analyse,  Circuits-séquentiels-conception, Registres-et-compteurs, Mémoires, Logique-programmable, VHDL, Exercices]
