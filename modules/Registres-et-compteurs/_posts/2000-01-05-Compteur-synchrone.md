@@ -137,7 +137,7 @@ d'états correspondant est donné dans le tableau [3](#orgbb470fd).
 </tbody>
 </table>
 
-Les expressions sont: 
+Les expressions  pour le décodeur de prochain état sont: 
 
 $$  Z_2^{n+1} = Z_0^n \cdot Z_1^n \cdot (Z_2^{n})^\prime + (Z_0^{n})^\prime \cdot Z_2^n + (Z_1^{n})^\prime \cdot Z_2^n $$
 

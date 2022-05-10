@@ -4,10 +4,10 @@ title: Modèles de machines séquentielles
 
 ## Modèles de machines séquentielles
 
-On appelle les modèles abstraits de systèmes séquentiels des **machines
-à état fini** (en anglais, *Finite State Machines* ou FSM).  On
-distingue deux modèles de circuit séquentiels, selon la façon dont les
-sortie sont obtenues. 
+On appelle les modèles abstraits de systèmes séquentiels des
+**machines à état fini** (en anglais, *Finite State Machines* (FSM)).
+On distingue deux modèles de circuit séquentiels, selon la façon dont
+les sortie sont obtenues.
 
 Dans le modèle de Mealy, les sorties dépendent à
 la fois des entrées et des variables d'état.

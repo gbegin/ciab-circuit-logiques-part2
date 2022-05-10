@@ -7,12 +7,15 @@ title: Diagramme d'état
 Un diagramme d'état préliminaire est un bon point de départ pour
 définir et étudier le comportement du système. On identifiera les
 différents états par des lettres pour les distinguer sans faire
-référence à des variables binaires de mémoire. Il s'agit dans un
-premier temps d'un diagramme préliminaire, parce que le diagramme
-final qui sera implémenté sera potentiellement différent.
+référence à des variables binaires associées à des éléments de
+mémoire. Il s'agit dans un premier temps d'un diagramme préliminaire,
+parce que le diagramme final qui sera implémenté sera potentiellement
+différent.
 
 À partir du diagramme d'état, il est possible de vérifier quelle
-séquence de sortie correspond à une séquence d'entrée donnée.
+séquence de sortie correspond à une séquence d'entrée donnée, et ainsi
+de valider le comportement.
+
 
 
 ## Tableau d'états

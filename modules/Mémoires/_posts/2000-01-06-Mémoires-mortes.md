@@ -7,7 +7,7 @@ title: Mémoires mortes
 Dans son mode d'utilisation normal, une mémoire morte peut seulement
 être lue. Il n'est donc pas nécessaire de préciser l'opération qui
 sera effectuée. Il y aura donc des entrées pour les adresses et un
-signal de contrôle de type *CS*.
+signal de contrôle de type `CS`.
 
 La figure suivante montre l'essentiel d'une mémoire ROM de
 16 mots de 4 bits. Un décodeur d'adresse permet de sélectionner quel
@@ -17,7 +17,7 @@ A_0$$.
 ![img]({{site.baseurl}}/img/proto_rom1_prog.svg "Modèle d'une mémoire ROM")
 *Modèle d'une mémoire ROM*
 
-Pour simplifier la représentation de genre de configuration, on
+Pour simplifier la représentation de ce genre de configuration, on
 utilise une schématisation symbolique compacte pour les portes OU de
 sortie, dans laquelle chacune des 16 lignes horizontales représente en
 fait 16 entrées d'une porte OU. La présence d'une croix à
@@ -72,25 +72,26 @@ mémoires mortes. Leurs usages typiques sont surtout déterminés par la
 façon de les configurer (on dit couramment *programmer*, même s'il
 s'agit d'un intervention au niveau du matériel).
 
-Dans la **programmation par masque**, la mémoire est programmée lors de
-la fabrication de la puce. Le fabricant se base sur un tableau de
+Dans la **programmation par masque**, la mémoire est programmée lors
+de la fabrication de la puce. Le fabricant se base sur un tableau de
 vérité fourni par le client pour établir des connexions qui seront
 implémentées (ou pas) dans le procédé de fabrication via des masques
-qui empêchent la déposition de matériau conducteur sur les couches de
-la puce.  Cette approche convient à la production de masse à grand
-volume.
+qui empêchent la déposition de matériau conducteur sur les couches du
+circuit intégré.  Cette approche convient à la production de masse à
+grand volume.
 
-Dans la **programmation sur mesure**, on utilise un type de mémoire qui
-comporte initialement des connexions entre toutes les sorties du
+Dans la **programmation sur mesure**, on utilise un type de mémoire
+qui comporte initialement des connexions entre toutes les sorties du
 décodeur et toutes les entrées des portes OU de sortie (la mémoire en
 configuration initiale comporte des 1 partout). La programmation, qui
-peut se faire chez le développeur au moyen d'un dispositif programmeur
-spécialement conçu à cette fin, consiste à supprimer les connexions
-qui ne sont pas nécessaires en envoyant des impulsions à forte tension
-pour faire fondre les fusibles de connexions spécifiques. Un fusible
-fondu (pas de connexion) correspondant un un bit 0 dans la
-mémoire. Cette programmation est bien entendu irréversible: impossible
-de reconnecter une fois que le fusible est fondu.
+peut se faire chez le développeur au moyen d'un dispositif de
+programmation (ou programmeur) spécialement conçu à cette fin,
+consiste à supprimer les connexions qui ne sont pas nécessaires en
+envoyant des impulsions à forte tension pour faire fondre les fusibles
+de connexions spécifiques. Un fusible fondu (pas de connexion)
+correspondant à un bit 0 dans la mémoire. Cette programmation est
+bien entendu irréversible: impossible de reconnecter une fois que le
+fusible est fondu.
 
 Avec un **PROM** (pour *Programmable ROM*), il est possible d'effacer la
 configuration dans son ensemble en soumettant la puce à une lumière

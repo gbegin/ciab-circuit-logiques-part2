@@ -7,21 +7,17 @@ title: Simulateurs VHDL
 # Préparation et simulation des modèles VHDL
 
 
-<a id="orgaa5dd73"></a>
-
 ## Éditeurs
 
 N'importe quel éditeur de programmation peut être utilisé pour éditer les modèles VHDL. Certains simulateurs comportent un éditeur intégré. Il peut être avantageux d'utiliser un éditeur avec fonction de surlignage syntaxique pour le langage.
 
 
-<a id="orgff698b2"></a>
-
 ## Simulateurs gratuits
 
-Voici quelques simulateurs gratuits
+Voici quelques simulateurs gratuits.
 
 
-<a id="org6a63983"></a>
+
 
 ### Modelsim/Questa
 
@@ -36,7 +32,7 @@ Intel:
 -   L'utilisation requiert une license (gratuite) spécifique à un ordinateur donné, qu'il faut demander par courriel
 -   L'installation et l'activation comportent plusieurs étapes
 
-Lattice: 
+Lattice:
 
 [iCEcube2 Design Software](http://www.latticesemi.com/icecube2)
 
@@ -44,7 +40,7 @@ Lattice:
 -   Fait partie d'un suite logicielle en support à la gamme de FPGA du fabricant
 -   L'utilisation requiert une license (gratuite) spécifique à un ordinateur donné
 
-Microchip: 
+Microchip:
 
 [Libero SoC Design Suite](https://www.microchip.com/en-us/products/fpgas-and-plds/fpga-and-soc-design-tools/fpga/libero-software-later-versions#downloads)
 
@@ -53,7 +49,7 @@ Microchip:
 -   L'utilisation requiert une license (gratuite) spécifique à un ordinateur donné
 
 
-<a id="org9dca6d7"></a>
+
 
 ### Active-HDL (version étudiant)
 
@@ -64,7 +60,7 @@ Microchip:
 -   L'inscription donne accès à une page de téléchargement
 
 
-<a id="orge6942c7"></a>
+
 
 ### Vivado (Xilinx)
 
@@ -75,7 +71,6 @@ Microchip:
 -   L'utilisation requiert une license (gratuite) spécifique à un ordinateur donné
 
 
-<a id="org4b1d5c7"></a>
 
 ### GHDL/ GTKWave
 
@@ -94,7 +89,6 @@ Ces deux logiciels sont à code source ouvert, donc entièrement gratuits.
 -   GTKWave est utilisé pour visualiser les résultats
 
 
-<a id="orgda285b7"></a>
 
 ### EDA Playground
 

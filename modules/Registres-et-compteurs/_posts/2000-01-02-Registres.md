@@ -22,20 +22,20 @@ représente les entrées et sorties comme des vecteurs de quatre bits.
 
 Si on veut concevoir un registre parallèle polyvalent, on doit le
 munir de la possibilité de le charger à partir des entrées ou de
-maintenir les valeurs déjà mémoriser. On ajoutera donc une entrée
+maintenir les valeurs déjà mémorisées. On ajoutera donc une entrée
 *charge* au registre pour contrôler ces opérations.
 
 Comment mettre en oeuvre ce chargement/maintien demande un peu de
 réflexion. Il serait possible d'agir (à la façon d'un signal *enable*
 via une porte ET par exemple) sur l'entrée d'horloge des bascules
-pour empêcher leur contenu d'être affectés par les entrées. Mais
+pour empêcher leur contenu d'être affecté par les entrées. Mais
 alors, on briserait le principe de synchronisation qui veut que tous
 les éléments d'un système soient tous commandés en même temps par une
 même horloge.
 
 La solution consiste à toujours mettre à jour le contenu des bascules: 
 
-1.  lorsque *charge* est inactif (fonction maintien), la sortie de
+1.  Lorsque *charge* est inactif (fonction maintien), la sortie de
     chaque bascule, réacheminée à l'entrée, est sélectionnée pour
     récrire le même contenu.
 2.  Lorsque *charge* est actif (fonction chargement), c'est l'entrée

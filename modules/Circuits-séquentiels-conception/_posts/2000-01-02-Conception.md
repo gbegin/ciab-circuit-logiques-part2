@@ -19,7 +19,9 @@ nombres d'états internes différents.
 
 Des considérations pratiques nous amèneront souvent à vouloir réduire
 le nombre d'états nécessaires, et à simplifier les différents circuit
-combinatoires utilisés.
+combinatoires utilisés. Réduire le nombre de bascules utilisées ne se
+traduit pas toujours par un système plus simple, car les décodeurs
+d'état et de sortie peuvent s'en retrouver plus complexes.
 
 
 ## Spécification fonctionnelle
@@ -32,14 +34,14 @@ peut pas conduire à système adéquat.
 Il faudra un bon bagage d'expérience et d'intuition au concepteur pour
 pouvoir interpréter et traduire correctement une description
 informelle, plus souvent qu'autrement incomplète, ambiguë et
-imprécise, en un design concret qui répond au besoin maladroitement
+imprécise, en un design concret qui répond à un besoin maladroitement
 exprimé. Il revient au concepteur de s'assurer que ce qu'il a compris
 correspond bien à ce qui était demandé.
 
 La première question à poser est: Que doit faire le système? Suivront
 d'autres questions, amenant à définir davantage de détails: Combien
 d'entrées sont nécessaires? Doit-il y avoir des entrées? Combien de
-sorties sont nécessaires?. Le comportement du système pourra être
+sorties sont nécessaires? Le comportement du système pourra être
 essentiellement caractérisé en répondant à la question: Quelle doit
 être la séquence des sorties, pour une certaine séquence d'entrées?
 Mais comme les séquences d'entrées peuvent être en nombre infini, il

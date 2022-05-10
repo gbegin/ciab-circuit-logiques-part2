@@ -314,16 +314,15 @@ la formulation des tableaux de vérité pour le décodeur de prochain
 état, ces états donneront lieu à des cas facultatifs, qui pourront
 permettre la simplification du circuit combinatoire du décodeur.
 
-Il faut toutefois méfier de scénarios dans lesquels la machine à état
-pourrait se retrouver dans un tel état interdit en raison d'un
+Il faut toutefois se méfier de scénarios dans lesquels la machine à
+état pourrait se retrouver dans un tel état interdit en raison d'un
 dysfonctionnement momentané ou lors de la mise en marche du
 système. Considérons par exemple un circuit séquentiel dont le
 diagramme d'état (tel qu'implémenté après conception) est illustré
-ci-dessous. En fonctionnement normal, le
-système évolue entre les états *a*, *b* et *c*. Mais si pour une
-raison quelconque, le système entre dans l'état *d*, il restera coincé
-en bouclant sur cet état pour toujours (ou peut-être jusqu'à un
-prochain dysfonctionnement).
+ci-dessous. En fonctionnement normal, le système évolue entre les
+états *a*, *b* et *c*. Mais si pour une raison quelconque, le système
+entre dans l'état *d*, il restera coincé en bouclant sur cet état pour
+toujours (ou peut-être jusqu'à un prochain dysfonctionnement).
 
 ![img]({{site.baseurl}}/img/etat_interdit.svg "Diagramme d'état avec état interdit")
 *Diagramme d'état avec état interdit*

@@ -14,8 +14,8 @@ moment, mais aussi de ces valeurs qui sont mémorisées dans le
 système. Pour décrire cette situation dans laquelle se trouvent les
 valeurs stockées en mémoire, on parle de l'**état** du système. Selon
 les entrées et l'état à un instant donné, le système pourra changer
-d'état selon les changements qui seront apportés aux valeurs
-mémorisées par la portion combinatoire.
+d'état selon les changements qui seront apportés par la portion
+combinatoire aux valeurs mémorisées.
 
 On verra donc le système évoluer au fil du temps, passant d'un état à
 un autre, et générant des sorties en fonction des entrées et de l'état

@@ -140,10 +140,10 @@ d'utile à mettre dans une case étiquetée [b;b].
 1.  On applique la procédure en considérant chaque case du tableau, ce
     qui permet de comparer chaque paire de lignes du tableau d'état.
     -   On vérifie dans un premier temps si les sorties sont
-        différentes. Si c'est le cas, on met un X dans la case. Par
-        exemple ici, *a* et *c*, *a* et *e*, *a* et *f*, *a* et *h*
-        ont des sorties différentes, donc on place des X dans les
-        cases [a;c], [a;e], [a;f] et [a;h].
+        différentes. Si c'est le cas, on met un &check; dans la
+        case. Par exemple ici, *a* et *c*, *a* et *e*, *a* et *f*, *a*
+        et *h* ont des sorties différentes, donc on place des &check;
+        dans les cases [a;c], [a;e], [a;f] et [a;h].
     -   Si les sorties sont les mêmes, on place dans la case les
         paires d'états qu'une équivalence nécessiterait. Par exemple
         pour la case [a;b], une équivalence entre *a* et *b*
@@ -160,44 +160,45 @@ d'utile à mettre dans une case étiquetée [b;b].
         également. On continue ainsi, de colonne en colonne, pour obtenir
         après ces étapes le résultat suivant.
     
-    |---|:-----------------:|:--------:|:--------:|:-----------------:|:--------:|:--------:|:---------------:|
-	| b | g=f c=h           | \_       | \_       | \_                | \_       | \_       | \_              |
-	| c | &nbsp; X          | &nbsp; X | \_       | \_                | \_       | \_       | \_              |
-	| d | g=a               | f=a h=c  | &nbsp; X | \_                | \_       | \_       | \_              |
-	| e | &nbsp; X          | &nbsp; X | d=a      | &nbsp; X          | \_       | \_       | \_              |
-	| f | &nbsp; X          | &nbsp; X | e=f d=b  | &nbsp; X          | c=f a=b  | \_       | \_              |
-	| g | &nbsp; OUI &nbsp; | f=a h=c  | &nbsp; X | &nbsp; OUI &nbsp; | &nbsp; X | &nbsp; X | \_              |
-	| h | &nbsp; X          | &nbsp; X | e=c d=g  | &nbsp; X          | a=g      | f=c b=g  | &nbsp; X &nbsp; |
-	|---|:-----------------:|:--------:|:--------:|:-----------------:|:--------:|:--------:|:---------------:|
-	|   | a                 | b        | c        | d                 | e        | f        | g               |
+    |---|:-----------------:|:--------------:|:--------------:|:-----------------:|:--------------:|:--------------:|:---------------------:|
+    | b | g=f c=h           | \_             | \_             | \_                | \_             | \_             | \_                    |
+    | c | &nbsp; &check;    | &nbsp; &check; | \_             | \_                | \_             | \_             | \_                    |
+    | d | g=a               | f=a h=c        | &nbsp; &check; | \_                | \_             | \_             | \_                    |
+    | e | &nbsp; &check;    | &nbsp; &check; | d=a            | &nbsp; &check;    | \_             | \_             | \_                    |
+    | f | &nbsp; &check;    | &nbsp; &check; | e=f d=b        | &nbsp; &check;    | c=f a=b        | \_             | \_                    |
+    | g | &nbsp; OUI &nbsp; | f=a h=c        | &nbsp; &check; | &nbsp; OUI &nbsp; | &nbsp; &check; | &nbsp; &check; | \_                    |
+    | h | &nbsp; &check;    | &nbsp; &check; | e=c d=g        | &nbsp; &check;    | a=g            | f=c b=g        | &nbsp; &check; &nbsp; |
+    |---|:-----------------:|:--------------:|:--------------:|:-----------------:|:--------------:|:--------------:|:---------------------:|
+    |   | a                 | b              | c              | d                 | e              | f              | g                     |
 	{:.mbtablestyle}
 
-2.  L'étape suivante consiste à considérer chaque case qui
-    comporte une ou des paires d'états impliqués. On regarde la case
-    correspondant à chaque paire, et s'il y a un X dans la case, alors
-    l'implication ne fonctionne pas. Par exemple, la case [a;b] repose
-    sur les équivalences g=f c=h. Or si on regarde la case [f;g], on
-    voit qu'il s'y trouve un X, ce qui veut dire que *f et /g* ne peuvent
-    pas être équivalents, ce qui implique que a et b ne pourront pas
-    être équivalents. Ce n'est pas la peine de regarder la case [c;h].
-    On remplacera donc les paires de la case [a;b] par un XX, pour
-    faire ressortir ces nouveaux échecs.
-3.  Un XX dans le tableau peut faire échouer d'autres implications. Il
-    faut donc revoir les cases avec des paires d'états impliqués pour
-    voir s'il faut changer leur statut. On continue à revoir ainsi
-    jusqu'à ce qu'il n'y ait plus d'ajouts de XX. On obtient
-    finalement le tableau suivant:
+2.  L'étape suivante consiste à considérer chaque case qui comporte
+    une ou des paires d'états impliqués. On regarde la case
+    correspondant à chaque paire, et s'il y a un &check; dans la case,
+    alors l'implication ne fonctionne pas. Par exemple, la case [a;b]
+    repose sur les équivalences g=f c=h. Or si on regarde la case
+    [f;g], on voit qu'il s'y trouve un &check;, ce qui veut dire que
+    *f et /g* ne peuvent pas être équivalents, ce qui implique que a
+    et b ne pourront pas être équivalents. Ce n'est pas la peine de
+    regarder la case [c;h].  On remplacera donc les paires de la case
+    [a;b] par un &check;&check;, pour faire ressortir ces nouveaux
+    échecs.
+3.  Un &check;&check; dans le tableau peut faire échouer d'autres
+    implications. Il faut donc revoir les cases avec des paires
+    d'états impliqués pour voir s'il faut changer leur statut. On
+    continue à revoir ainsi jusqu'à ce qu'il n'y ait plus d'ajouts de
+    &check;&check;. On obtient finalement le tableau suivant:
 
-	|---|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|
-	| b | &nbsp; XX &nbsp; | &nbsp; \_ &nbsp; | &nbsp; \_ &nbsp; | &nbsp; \_ &nbsp; | &nbsp; \_ &nbsp; | &nbsp; \_ &nbsp; | &nbsp; \_ &nbsp; |
-	| c | X                | X                | \_               | \_               | \_               | \_               | \_               |
-	| d | g=a              | XX               | X                | \_               | \_               | \_               | \_               |
-	| e | X                | X                | d=a              | X                | \_               | \_               | \_               |
-	| f | X                | X                | XX               | X                | XX               | \_               | \_               |
-	| g | OUI              | XX               | X                | OUI              | X                | X                | \_               |
-	| h | X                | X                | e=c d=g          | X                | a=g              | XX               | X                |
-	|---|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|
-	|   | a                | b                | c                | d                | e                | f                | g                |
+	|---|:----------------------------:|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|
+	| b | &nbsp; &check;&check; &nbsp; | &nbsp; \_ &nbsp; | &nbsp; \_ &nbsp; | &nbsp; \_ &nbsp; | &nbsp; \_ &nbsp; | &nbsp; \_ &nbsp; | &nbsp; \_ &nbsp; |
+	| c | &check;                      | &check;          | \_               | \_               | \_               | \_               | \_               |
+	| d | g=a                          | &check;&check;   | &check;          | \_               | \_               | \_               | \_               |
+	| e | &check;                      | &check;          | d=a              | &check;          | \_               | \_               | \_               |
+	| f | &check;                      | &check;          | &check;&check;   | &check;          | &check;&check;   | \_               | \_               |
+	| g | OUI                          | &check;&check;   | &check;          | OUI              | &check;          | &check;          | \_               |
+	| h | &check;                      | &check;          | e=c d=g          | &check;          | a=g              | &check;&check;   | &check;          |
+	|---|:----------------------------:|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|
+	|   | a                            | b                | c                | d                | e                | f                | g                |
 	{:.mbtablestyle}
 
 4.  Après cette étape, toutes les cases qui contiennent OUI ou des

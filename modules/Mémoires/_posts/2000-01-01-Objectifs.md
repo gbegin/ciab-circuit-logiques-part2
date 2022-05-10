@@ -8,8 +8,8 @@ title: Objectifs
 -   Connaître l'organisation typique d'une mémoire et le fonctionnement
     de l'adressage
 -   Comprendre le fonctionnement d'un bus de données
--   Connaître les cycles d'écriture et de lecture
--   Savoir implémenter une fonction combinatoire arbitraire à l'aide d'une
+-   Pouvoir interpréter les cycles d'écriture et de lecture
+-   Pouvoir implémenter une fonction combinatoire arbitraire à l'aide d'une
     mémoire ROM
--   Comprendre le fonctionnement d'un tableau de correspondance
+-   Pouvoir utiliser un tableau de correspondance
 -   Être familier avec les différents types de mémoires non-volatiles

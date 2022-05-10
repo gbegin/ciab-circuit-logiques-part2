@@ -3,9 +3,10 @@ title: Objectifs
 ---
 # Objectifs
 
--   Comprendre la différence entre un langage descriptif de matériel
-    et un langage de programmation
--   Comprendre le principe des énoncés concurrents
+-   Pouvoir expliquer la différence entre un language descriptif de
+    matériel et un langage de programmation
+-   Pouvoir expliquer les mécanismes d'assignation de signaux et la
+    notion de concurrence
 -   Savoir distinguer entre une description d'entité et une architecture
 -   Savoir distinguer entre un modèle structural et un modèle
     comportemental
@@ -16,3 +17,6 @@ title: Objectifs
 -   Pouvoir préparer un banc d'essai permettant de tester un modèle de circuit
 -   Pouvoir simuler un modèle VHDL au moyen d'un banc d'essai et
     interpréter les résultats
+-   Pouvoir élaborer une description complète en VHDL pour un système simple
+
+

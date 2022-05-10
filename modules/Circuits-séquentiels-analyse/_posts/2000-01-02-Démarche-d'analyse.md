@@ -37,8 +37,8 @@ Les grandes lignes de la démarche sont les suivantes.
 5.  Diagramme d'état.
 6.  Interprétation du comportement du circuit séquentiel.
 
-Au centre de l'analyse se trouve l'analyse des circuits combinatoires
-qui déterminent ce que seront les entrées des bascules. Nous
-chercherons à établir les **équations de transition** qui précisent ce
-que sera le prochain état en fonction des entrées et de l'état
-présent.
+Au centre de ce processus se trouve l'analyse des circuits
+combinatoires qui déterminent ce que seront les entrées des
+bascules. Nous chercherons à établir les **équations de transition**
+qui précisent ce que sera le prochain état en fonction des entrées et
+de l'état présent.

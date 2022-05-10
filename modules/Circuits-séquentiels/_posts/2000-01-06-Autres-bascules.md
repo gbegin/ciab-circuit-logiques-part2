@@ -5,7 +5,7 @@ title: Autres bascules
 ### Autres bascules
 
 Il y a essentiellement trois opérations possibles pour une bascule:
-mettre sa sortie à 1 (*set*), mettre sa sortie à 0 (*reste*) ou faire
+mettre sa sortie à 1 (*set*), mettre sa sortie à 0 (*reset*) ou faire
 basculer son état de sortie (*toggle*).
 
 

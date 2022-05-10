@@ -24,7 +24,7 @@ Un compteur Johnson permet de doubler le nombre d'états distincts par
 rapport au compteur en anneau en injectant le complément du dernier
 bit dans l'entrée du registre à décalage.  La figure suivante 
 illustre un compteur en anneau Johnson de quatre bits, de même que la
-trace de fonctionnement. La séquence d'états est données dans le
+trace de fonctionnement. La séquence d'états est donnée dans le
 tableau [4](#org585130d).
 
 ![img]({{site.baseurl}}/img/johnson4.svg "Compteur Johnson à 4 bits")
@@ -175,17 +175,24 @@ diviseurs, comme trois ou cinq, qui ne sont pas des puissances de deux.
 ### Compteur à chargement parallèle
 
 Un compteur à chargement parallèle est illustré sur la figure
-suivante. En activant l'entrée *Compte*, le comptage se fait vers le haut. En activant l'entrée *Charge*, les entrées $$ I_i, i=0, \ldots, 3$$ sont insérées dans les bascules. Il y a aussi une sortie *ov* qui indique lorsque le compteur atteint sa valeur maximale. Cette sortie peut être utilisée pour activer un autre compteur pour des bits de plus haut niveau.
+suivante. En activant l'entrée *Compte*, le comptage se fait vers le
+haut. En activant l'entrée *Charge*, les entrées $$ I_i, i=0, \ldots,
+3$$ sont insérées dans les bascules. Il y a aussi une sortie `ov` qui
+indique lorsque le compteur atteint sa valeur maximale. Cette sortie
+peut être utilisée pour activer un autre compteur pour des bits de
+plus haut niveau.
 
 ![img]({{site.baseurl}}/img/compt_chargement.svg "Compteur à chargement parallèle")
 *Compteur à chargement parallèle*
 
-La trace d’exécution de la figure suivante montre le comptage de 4 jusqu'à 15 et retour à 0. On voit le signal *ov* s'activer sur 15.
+La trace d’exécution de la figure suivante montre le comptage de 4
+jusqu'à 15 et retour à 0. On voit le signal `ov` s'activer sur 15.
 
 ![img]({{site.baseurl}}/img/compt_chargement_tracecompte.svg "Trace d'exécution, de 0 à 15")
 *Trace d'exécution, de 0 à 15*
 
-La trace de la figure suivante montre le compteur qui passe de 0 à 5, puis un chargement parallèle de la valeur 12.
+La trace de la figure suivante montre le compteur qui passe de 0 à 5,
+puis un chargement parallèle de la valeur 12.
 
 ![img]({{site.baseurl}}/img/compt_chargement_trace_charge.svg "Trace d'exécution, de 0 à 5 et chargement de 12")
 *Trace d'exécution, de 0 à 5 et chargement de 12*
@@ -207,7 +214,7 @@ laquelle on voit le passage de 12 à 0.
 *Compteur modulo-13*
 
 On pourrait aussi réaliser un compteur qui compte par exemple de 4 à
-15, en utilisant cette fois la sortie *ov* pour activer le chargement
+15, en utilisant cette fois la sortie `ov` pour activer le chargement
 d'une valeur initiale 4.
 
 
