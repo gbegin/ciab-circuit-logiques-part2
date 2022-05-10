@@ -72,9 +72,7 @@ sont utilisées.
 ### Bus de données
 
 Pour acheminer les données lues ou à écrire dans la mémoire, on
-utilise des tampons émetteur-récepteurs de bus (voir section [Portes à
-trois états et tampon de bus]({{site.baseurl}}{% post_url
-modules/Circuits-combinatoires-typiques/2000-01-12-Démultiplexeur %}),
+utilise des tampons émetteur-récepteurs de bus,
 organisés en vecteur, pour créer un **bus de données** qui permet un
 aller-retour des données, selon le sens de l'action. Cela permet de
 diminuer de moitié le nombre de connexions nécessaires pour l'échange
