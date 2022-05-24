@@ -124,7 +124,8 @@ et les lignes avec les $$n-1$$ derniers états. La première case vide,
 en haut à gauche, sera notée [a;b] et la dernière en bas à droite sera
 [g;h]. Voici le tableau avant d'être rempli. Seules les cases qui ne
 comportent pas de \_ peuvent être remplies. Il n'y a par exemple rien
-d'utile à mettre dans une case étiquetée [b;b].
+d'utile à mettre dans une case étiquetée [b;b], et on mettra
+l'information qui irait dans la case [c;b] dans la case [b;c].
 
 | b | &nbsp; &nbsp; | &nbsp; \_ | &nbsp;  \_ | &nbsp;  \_ | &nbsp;  \_ | &nbsp; \_ | &nbsp;  \_ |
 | c |               |           | \_         | \_         | \_         | \_        | \_         |
@@ -160,29 +161,29 @@ d'utile à mettre dans une case étiquetée [b;b].
         également. On continue ainsi, de colonne en colonne, pour obtenir
         après ces étapes le résultat suivant.
     
-    |---|:-----------------:|:--------------:|:--------------:|:-----------------:|:--------------:|:--------------:|:---------------------:|
-    | b | g=f c=h           | \_             | \_             | \_                | \_             | \_             | \_                    |
-    | c | &nbsp; &#10003;    | &nbsp; &#10003; | \_             | \_                | \_             | \_             | \_                    |
-    | d | g=a               | f=a h=c        | &nbsp; &#10003; | \_                | \_             | \_             | \_                    |
-    | e | &nbsp; &#10003;    | &nbsp; &#10003; | d=a            | &nbsp; &#10003;    | \_             | \_             | \_                    |
-    | f | &nbsp; &#10003;    | &nbsp; &#10003; | e=f d=b        | &nbsp; &#10003;    | c=f a=b        | \_             | \_                    |
-    | g | &nbsp; OUI &nbsp; | f=a h=c        | &nbsp; &#10003; | &nbsp; OUI &nbsp; | &nbsp; &#10003; | &nbsp; &#10003; | \_                    |
-    | h | &nbsp; &#10003;    | &nbsp; &#10003; | e=c d=g        | &nbsp; &#10003;    | a=g            | f=c b=g        | &nbsp; &#10003; &nbsp; |
-    |---|:-----------------:|:--------------:|:--------------:|:-----------------:|:--------------:|:--------------:|:---------------------:|
-    |   | a                 | b              | c              | d                 | e              | f              | g                     |
+    |---|:-----------------:|:---------------:|:---------------:|:-----------------:|:---------------:|:---------------:|:----------------------:|
+    | b | g=f c=h           | \_              | \_              | \_                | \_              | \_              | \_                     |
+    | c | &nbsp; &#10003;   | &nbsp; &#10003; | \_              | \_                | \_              | \_              | \_                     |
+    | d | g=a               | f=a h=c         | &nbsp; &#10003; | \_                | \_              | \_              | \_                     |
+    | e | &nbsp; &#10003;   | &nbsp; &#10003; | d=a             | &nbsp; &#10003;   | \_              | \_              | \_                     |
+    | f | &nbsp; &#10003;   | &nbsp; &#10003; | e=f d=b         | &nbsp; &#10003;   | c=f a=b         | \_              | \_                     |
+    | g | &nbsp; OUI &nbsp; | f=a h=c         | &nbsp; &#10003; | &nbsp; OUI &nbsp; | &nbsp; &#10003; | &nbsp; &#10003; | \_                     |
+    | h | &nbsp; &#10003;   | &nbsp; &#10003; | e=c d=g         | &nbsp; &#10003;   | a=g             | f=c b=g         | &nbsp; &#10003; &nbsp; |
+    |---|:-----------------:|:---------------:|:---------------:|:-----------------:|:---------------:|:---------------:|:----------------------:|
+    |   | a                 | b               | c               | d                 | e               | f               | g                      |
 	{:.mbtablestyle}
 
 2.  L'étape suivante consiste à considérer chaque case qui comporte
     une ou des paires d'états impliqués. On regarde la case
-    correspondant à chaque paire, et s'il y a un &#10003; dans la case,
-    alors l'implication ne fonctionne pas. Par exemple, la case [a;b]
-    repose sur les équivalences g=f c=h. Or si on regarde la case
-    [f;g], on voit qu'il s'y trouve un &#10003;, ce qui veut dire que
-    *f* et *g* ne peuvent pas être équivalents, ce qui implique que a
-    et b ne pourront pas être équivalents. Ce n'est pas la peine de
-    regarder la case [c;h].  On remplacera donc les paires de la case
-    [a;b] par un &#10003;&#10003;, pour faire ressortir ces nouveaux
-    échecs.
+    correspondant à chaque paire, et s'il y a un &#10003; dans la
+    case, alors l'implication ne fonctionne pas. Par exemple, la case
+    [a;b] repose sur les équivalences g=f et c=h. Or si on regarde la
+    case [f;g], on voit qu'il s'y trouve un &#10003;, ce qui veut dire
+    que *f* et *g* ne peuvent pas être équivalents, ce qui implique
+    que *a* et *b* ne pourront pas être équivalents. Ce n'est pas la
+    peine de regarder la case [c;h].  On remplacera donc les paires de
+    la case [a;b] par un &#10003;&#10003;, pour faire ressortir ces
+    nouveaux échecs.
 3.  Un &#10003;&#10003; dans le tableau peut faire échouer d'autres
     implications. Il faut donc revoir les cases avec des paires
     d'états impliqués pour voir s'il faut changer leur statut. On
