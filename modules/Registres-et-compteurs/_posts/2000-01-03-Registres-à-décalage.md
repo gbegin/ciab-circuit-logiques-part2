@@ -11,7 +11,7 @@ l'entrée est insérée dans la première bascule, à droite, et le contenu
 du registre est décalé d'une position vers la gauche. La sortie
 provient de la dernière bascule à droite.
 
-![img]({{site.baseurl}}/img/shift4.svg "Registre à décalage 4 bits")
+![Registre à décalage 4 bits.]({{site.baseurl}}/img/shift4.svg "Registre à décalage 4 bits")
 *Registre à décalage 4 bits*
 
 En utilisant un multiplexeur quatre-vers-un pour sélectionner ce qui
@@ -65,7 +65,7 @@ sélection, tel qu'indiqué dans le tableau [1](#orgbda54ca).
 </tbody>
 </table>
 
-![img]({{site.baseurl}}/img/shift4_univ.svg "Registre à décalage universel") 
+![Registre à décalage universel.]({{site.baseurl}}/img/shift4_univ.svg "Registre à décalage universel") 
 *Registre à décalage universel*
 
 Les registres à décalage sont notamment utilisés pour convertir des

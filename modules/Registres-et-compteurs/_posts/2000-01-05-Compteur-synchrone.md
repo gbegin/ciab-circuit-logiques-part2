@@ -14,7 +14,7 @@ Le diagramme d'état d'un compteur trois bits (huit états) est un
 cycle, comme on peut le voir sur la figure suivante. Le tableau
 d'états correspondant est donné dans le tableau [3](#orgbb470fd).
 
-![img]({{site.baseurl}}/img/compt8_FSM.svg "Diagramme d'état d'un compteur")
+![Diagramme d'état d'un compteur.]({{site.baseurl}}/img/compt8_FSM.svg "Diagramme d'état d'un compteur")
 *Diagramme d'état d'un compteur*
 
 <table id="orgbb470fd" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -147,7 +147,7 @@ $$  Z_0^{n+1} = (Z_0^{n})^\prime $$
 
 Le schéma est donné à la figure suivante.
 
-![img]({{site.baseurl}}/img/compt8.svg "Schéma logique du compteur à 3 bits")
+![Schéma logique du compteur à 3 bits.]({{site.baseurl}}/img/compt8.svg "Schéma logique du compteur à 3 bits")
 *Schéma logique du compteur à 3 bits*
 
 On peut ajouter aux compteurs des fonctions diverses: comptage vers le
@@ -177,7 +177,7 @@ conditions. L'entrée $$E$$ est un contrôle *enable* pour activer le
 comptage. On a aussi prévu une sortie *Prochain* pour pouvoir
 connecter en cascade d'autres compteurs.
 
-![img]({{site.baseurl}}/img/compt_4bits.svg "Schéma logique du compteur à 4 bits")
+![Schéma logique du compteur à 4 bits.]({{site.baseurl}}/img/compt_4bits.svg "Schéma logique du compteur à 4 bits")
 *Schéma logique du compteur à 4 bits*
 
 Si on réfléchit de la même façon au comptage vers le bas, on constate
@@ -197,6 +197,6 @@ En combinant les deux conditions au moyen d'un multiplexeur deux-vers-
 un, il est facile de concevoir un compteur haut/bas, tel qu'illustré
 sur la figure suivante.
 
-![img]({{site.baseurl}}/img/compt_updown.svg "Schéma logique du compteur haut/bas à 4 bits")
+![Schéma logique du compteur haut/bas à 4 bits.]({{site.baseurl}}/img/compt_updown.svg "Schéma logique du compteur haut/bas à 4 bits")
 *Schéma logique du compteur haut/bas à 4 bits*
 

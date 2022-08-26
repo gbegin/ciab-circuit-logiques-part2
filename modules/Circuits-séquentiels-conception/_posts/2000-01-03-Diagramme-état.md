@@ -33,8 +33,8 @@ dans un état équivalent. Considérons le diagramme d'état de la figure
 suivante et le tableau d'état correspondant
 [52](#org135cabe).
 
-![img]({{site.baseurl}}/img/exemp_simplif_net.svg "Diagramme d'état")
-*Diagramme d'état*
+![Diagramme d'état avant réduction.]({{site.baseurl}}/img/exemp_simplif_net.svg "Diagramme d'état")
+*Diagramme d'état avant réduction*
 
 <table id="org1a30b39" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Tableau 1 :</span> Tableau d'état</caption>

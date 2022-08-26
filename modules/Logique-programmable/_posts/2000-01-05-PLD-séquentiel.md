@@ -10,7 +10,7 @@ bascules, il est possible de proposer un circuit programmable
 séquentiel. La configuration générale est telle qu'illustré sur la
 figure suivante.
 
-![img]({{site.baseurl}}/img/circuit_seq_prog.png "Modèle de circuit séquentiel programmable")
+![Modèle de circuit séquentiel programmable.]({{site.baseurl}}/img/circuit_seq_prog.png "Modèle de circuit séquentiel programmable")
 *Modèle de circuit séquentiel programmable*
 
 Plusieurs fabricants proposent une variété de dispositifs de ce type,
@@ -20,5 +20,5 @@ cellules programmables sur un même circuit intégré, reliables au moyen
 d'un réseau d'interconnexion configurable. La disposition générale de
 ce genre de dispositif complexe est présentée à la figure suivante.
 
-![img]({{site.baseurl}}/img/CPLD.png "Modèle de circuit séquentiel programmable complexe")
+![Modèle de circuit séquentiel programmable complexe.]({{site.baseurl}}/img/CPLD.png "Modèle de circuit séquentiel programmable complexe")
 *Modèle de circuit séquentiel programmable complexe*

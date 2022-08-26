@@ -13,8 +13,8 @@ chacune des bascules. L'exemple suivant illustre la procédure.
 
 ### Exemple avec bascules JK
 
-![img]({{site.baseurl}}/img/seq_JK.svg "Exemple circuit séquentiel JK")
-*Exemple circuit séquentiel JK*
+![Exemple de circuit séquentiel avec des bascules JK.]({{site.baseurl}}/img/seq_JK.svg "Exemple circuit séquentiel JK")
+*Exemple de circuit séquentiel avec des bascules JK*
 
 À partir des expression des entrées $$J$$ et $$K$$ suivantes:
 
@@ -120,6 +120,6 @@ on peut remplir le tableau d'excitation.
 
 À partir du tableau d'excitation, on peut tracer le diagramme d'état.
 
-![img]({{site.baseurl}}/img/seq_JKb_FSM.svg "Diagramme d'état circuit séquentiel JK")
-*Diagramme d'état circuit séquentiel JK*
+![Diagramme d'état du circuit séquentiel avec bascules JK.]({{site.baseurl}}/img/seq_JKb_FSM.svg "Diagramme d'état circuit séquentiel JK")
+*Diagramme d'état du circuit séquentiel avec bascules JK*
 

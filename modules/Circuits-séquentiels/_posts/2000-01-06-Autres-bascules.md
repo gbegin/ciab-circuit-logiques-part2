@@ -17,14 +17,14 @@ un *set*, activer seulement l'entrée $$K$$ fait un *reset* et activer
 les deux entrées fait un *toggle*. On peut réaliser une bascule JK
 comme sur la figure suivante.
 
-![img]({{site.baseurl}}/img/bascule_JK.svg "Bascule JK")
+![Schéma d'une bascule JK.]({{site.baseurl}}/img/bascule_JK.svg "Bascule JK")
 *Bascule JK*
 
 La figure qui suit montre le chronogramme de fonctionnement d'une
 bascule JK. La bascule fait d'abord un *set*, puis un *reset* et enfin
 trois *toggles* de suite.
 
-![img]({{site.baseurl}}/img/chron_JK.svg "Chronogramme de la bascule JK")
+![Chronogramme de la bascule JK.]({{site.baseurl}}/img/chron_JK.svg "Chronogramme de la bascule JK")
 *Chronogramme de la bascule JK*
 
 
@@ -34,6 +34,6 @@ La bascule T (T pour *toggle*) change d'état à chaque déclenchement
 lorsque l'entrée $$T$$ est activée. On peut la réaliser à partir d'une
 bascule D ou d'une bascule JK, comme on peut le voir sur la figure suivante.
 
-![img]({{site.baseurl}}/img/basculeT.svg "Bascule T")
+![Schéma d'une bascule T: en haut, à partir d'une bascule JK;  en bas, à partir d'une bascule D.]({{site.baseurl}}/img/basculeT.svg "Bascule T")
 *Bascule T*
 

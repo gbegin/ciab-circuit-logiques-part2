@@ -24,6 +24,6 @@ tailles de mémoire sont souvent exprimées au moyen de multiplicateurs:
 K (kilo) correspondant à $$2^{10}$$, M (mega) correspondant à $$2^{20}$$
 ou G (giga) correspondant à $$2^{30}$$.
 
-![img]({{site.baseurl}}/img/memoire.png "Schéma d'une mémoire")
+![Schéma-bloc d'une mémoire.]({{site.baseurl}}/img/memoire.png "Schéma d'une mémoire")
 *Schéma d'une mémoire*
 

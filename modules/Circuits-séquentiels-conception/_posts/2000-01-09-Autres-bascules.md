@@ -300,7 +300,7 @@ $$ K_{Z_0} = (A + Z_1^n)^\prime $$
 
 Ce qui nous donne l'implémentation de la figure suivante.
 
-![img]({{site.baseurl}}/img/exemp_seq101_JK.svg "Détecteur pour la séquence 101, bascules JK")
+![Détecteur pour la séquence 101, bascules JK.]({{site.baseurl}}/img/exemp_seq101_JK.svg "Détecteur pour la séquence 101, bascules JK")
 *Détecteur pour la séquence 101, bascules JK*
 
 ## États interdits
@@ -324,7 +324,7 @@ ci-dessous. En fonctionnement normal, le système évolue entre les
 entre dans l'état *d*, il restera coincé en bouclant sur cet état pour
 toujours (ou peut-être jusqu'à un prochain dysfonctionnement).
 
-![img]({{site.baseurl}}/img/etat_interdit.svg "Diagramme d'état avec état interdit")
+![Diagramme d'état avec état interdit.]({{site.baseurl}}/img/etat_interdit.svg "Diagramme d'état avec état interdit")
 *Diagramme d'état avec état interdit*
 
 Une solution serait de modifier le décodeur de prochain état pour
@@ -332,7 +332,7 @@ s'assurer que, de l'état interdit, on revient toujours vers un état
 normal, comme on peut le voir sur la figure suivante, où de l'état
 *d*, on reviendra toujours vers l'état *c*.
 
-![img]({{site.baseurl}}/img/etat_interdit_revient.svg "Diagramme d'état qui assure le retour en fonctionnement normal")
+![Diagramme d'état qui assure le retour en fonctionnement normal.]({{site.baseurl}}/img/etat_interdit_revient.svg "Diagramme d'état qui assure le retour en fonctionnement normal")
 *Diagramme d'état qui assure le retour en fonctionnement normal*
 
 ## Exemple avec états *one-hot*
@@ -342,8 +342,8 @@ laquelle il n'y a qu'un seul bit 1 par code binaire.
 
 Considérons le diagramme d'état suivant.
 
-![img]({{site.baseurl}}/img/exemple_one-hot.svg "Diagramme d'état pour *one-hot*")
-*Diagramme d'état pour one-hot*
+![Diagramme d'état pour assignation one-hot.]({{site.baseurl}}/img/exemple_one-hot.svg "Diagramme d'état pour *one-hot*")
+*Diagramme d'état pour assignation one-hot*
 
 Le tableau d'assignation d'état correspondant est
 

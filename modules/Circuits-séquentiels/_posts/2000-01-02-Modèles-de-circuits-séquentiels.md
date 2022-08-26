@@ -25,7 +25,7 @@ mémorisées. Le comportement d'un système séquentiel est donc
 caractérisé par une séquence temporelle d'entrées, de sorties et de
 valeurs interne d'état.
 
-![img]({{site.baseurl}}/img/circuit_seq.png "Modèle de circuit séquentiel")
+![Modèle de circuit séquentiel.]({{site.baseurl}}/img/circuit_seq.png "Modèle de circuit séquentiel")
 *Modèle de circuit séquentiel*
 
 On peut distinguer les circuits séquentiels selon la relation de
@@ -45,13 +45,13 @@ en détail, car elles sont à la base des circuits séquentiels les plus
 utilisés. La figure suivante présente le modèle général d'un
 circuit séquentiel synchrone.
 
-![img]({{site.baseurl}}/img/circuit_seq_sync.png "Modèle de circuit séquentiel synchrone")
+![Modèle de circuit séquentiel synchrone.]({{site.baseurl}}/img/circuit_seq_sync.png "Modèle de circuit séquentiel synchrone")
 *Modèle de circuit séquentiel synchrone*
 
 Le signal d'horloge est typiquement une onde carrée, telle
 qu'illustré sur la figure suivante.
 
-![img]({{site.baseurl}}/img/horloge.svg "Signal d'horloge")
+![Signal d'horloge en onde carrée.]({{site.baseurl}}/img/horloge.svg "Signal d'horloge")
 *Signal d'horloge*
 
 

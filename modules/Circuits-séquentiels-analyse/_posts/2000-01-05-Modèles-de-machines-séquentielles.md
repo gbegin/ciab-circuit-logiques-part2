@@ -12,11 +12,11 @@ les sortie sont obtenues.
 Dans le modèle de Mealy, les sorties dépendent à
 la fois des entrées et des variables d'état.
 
-![img]({{site.baseurl}}/img/mealy.png "Machine de Mealy")
+![Machine de Mealy.]({{site.baseurl}}/img/mealy.png "Machine de Mealy")
 *Machine de Mealy*
 
  Dans
 le modèle de Moore, les sorties ne dépendent que des variables d'état. 
 
-![img]({{site.baseurl}}/img/moore.png "Machine de Moore")
+![Machine de Moore.]({{site.baseurl}}/img/moore.png "Machine de Moore")
 *Machine de Moore*

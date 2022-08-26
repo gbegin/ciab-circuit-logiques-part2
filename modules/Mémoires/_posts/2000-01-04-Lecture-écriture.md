@@ -82,5 +82,5 @@ contrôle, comme on le voit sur la figure suivante.
 
  
 
-![img]({{site.baseurl}}/img/bus_trans8.svg "Bus de données, 8 bits")
+![Bus de données, 8 bits.]({{site.baseurl}}/img/bus_trans8.svg "Bus de données, 8 bits")
 *Bus de données, 8 bits*

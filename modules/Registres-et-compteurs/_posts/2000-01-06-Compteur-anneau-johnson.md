@@ -15,7 +15,7 @@ On utilise fréquemment ce type de compteur pour générer des signaux de
 synchronisation. En effet, chaque sortie devient active à son tour
 dans le cycle, pendant une période d'horloge.
 
-![img]({{site.baseurl}}/img/ring4.svg "Compteur en anneau à 4 bits")
+![Compteur en anneau à 4 bits.]({{site.baseurl}}/img/ring4.svg "Compteur en anneau à 4 bits")
 *Compteur en anneau à 4 bits*
 
 ### Compteur Johnson
@@ -27,7 +27,7 @@ illustre un compteur en anneau Johnson de quatre bits, de même que la
 trace de fonctionnement. La séquence d'états est donnée dans le
 tableau [4](#org585130d).
 
-![img]({{site.baseurl}}/img/johnson4.svg "Compteur Johnson à 4 bits")
+![Compteur Johnson à 4 bits avec trace d'exécution.]({{site.baseurl}}/img/johnson4.svg "Compteur Johnson à 4 bits")
 *Compteur Johnson à 4 bits*
 
 <table id="org585130d" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -150,13 +150,13 @@ présenté sur la figure ci-bas. La figure montre une trace
 d'exécution avec les signaux de sortie. On y voit que chacun des
 quatres signaux est activé à son tour.
 
-![img]({{site.baseurl}}/img/johnson2_quad_decode.svg "Compteur Johnson à 2 bits")
-*Compteur Johnson à 2 bits*
+![Compteur Johnson à 2 bits et circuit de décodage pour signaux de synchronisation.]({{site.baseurl}}/img/johnson2_quad_decode.svg "Compteur Johnson à 2 bits")
+*Compteur Johnson à 2 bits et circuit de décodage pour signaux de synchronisation*
 
 Si on s'intéresse aux sorties des bascules de ce même compteur Johnson, on peut voir sur la trace d'exécution de la figure suivante qu'on obtient des signaux en **quadrature**, c'est-à-dire que les sorties sont déphasées de 90 degrés les unes par rapport aux autres, comme le sont des fonctions $$ \sin(), \cos(), -\sin(), -\cos() $$.
 
-![img]({{site.baseurl}}/img/johnson2_quad.svg "Compteur Johnson à 2 bits")
-*Compteur Johnson à 2 bits*
+![Signaux en quadrature obtenus au moyen d'un compteur Johnson à 2 bits.]({{site.baseurl}}/img/johnson2_quad.svg "Compteur Johnson à 2 bits")
+*Signaux en quadrature obtenus au moyen d'un compteur Johnson à 2 bits*
 
 
 ### Diviseur de fréquence
@@ -182,19 +182,19 @@ indique lorsque le compteur atteint sa valeur maximale. Cette sortie
 peut être utilisée pour activer un autre compteur pour des bits de
 plus haut niveau.
 
-![img]({{site.baseurl}}/img/compt_chargement.svg "Compteur à chargement parallèle")
+![Compteur à chargement parallèle.]({{site.baseurl}}/img/compt_chargement.svg "Compteur à chargement parallèle")
 *Compteur à chargement parallèle*
 
 La trace d’exécution de la figure suivante montre le comptage de 4
 jusqu'à 15 et retour à 0. On voit le signal `ov` s'activer sur 15.
 
-![img]({{site.baseurl}}/img/compt_chargement_tracecompte.svg "Trace d'exécution, de 0 à 15")
+![Trace d'exécution, de 0 à 15]({{site.baseurl}}/img/compt_chargement_tracecompte.svg "Trace d'exécution, de 0 à 15")
 *Trace d'exécution, de 0 à 15*
 
 La trace de la figure suivante montre le compteur qui passe de 0 à 5,
 puis un chargement parallèle de la valeur 12.
 
-![img]({{site.baseurl}}/img/compt_chargement_trace_charge.svg "Trace d'exécution, de 0 à 5 et chargement de 12")
+![Trace d'exécution, de 0 à 5 et chargement de 12]({{site.baseurl}}/img/compt_chargement_trace_charge.svg "Trace d'exécution, de 0 à 5 et chargement de 12")
 *Trace d'exécution, de 0 à 5 et chargement de 12*
 
 
@@ -210,7 +210,7 @@ ainsi un compteur modulo-13, dont le cycle compte 13 états.  La figure
 illustre le compteur modulo-13, de même qu'une trace d'exécution sur
 laquelle on voit le passage de 12 à 0.
 
-![img]({{site.baseurl}}/img/compt_mod13.svg "Compteur modulo-13")
+![Compteur modulo-13.]({{site.baseurl}}/img/compt_mod13.svg "Compteur modulo-13")
 *Compteur modulo-13*
 
 On pourrait aussi réaliser un compteur qui compte par exemple de 4 à

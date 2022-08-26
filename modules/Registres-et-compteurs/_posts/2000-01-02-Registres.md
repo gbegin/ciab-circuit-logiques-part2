@@ -15,7 +15,7 @@ qui permet de stocker 4 valeurs binaires indépendantes. Le schéma du
 bas est une représentation symbolique du registre, dans laquelle on
 représente les entrées et sorties comme des vecteurs de quatre bits.
 
-![img]({{site.baseurl}}/img/regist_4.svg "Registre parallèle à quatre bits")
+![Registre parallèle à quatre bits.]({{site.baseurl}}/img/regist_4.svg "Registre parallèle à quatre bits")
 *Registre parallèle à quatre bits*
 
 ### Chargement parallèle
@@ -45,5 +45,5 @@ La sélection se fait au moyen d'un multiplexeur deux-vers-un à
 l'entrée de chaque bascule. La figure suivante montre le schéma
 du registre chargeable.
 
-![img]({{site.baseurl}}/img/reg_4_paral.svg "Registre parallèle à quatre bits chargeable")
+![Registre parallèle à quatre bits chargeable.]({{site.baseurl}}/img/reg_4_paral.svg "Registre parallèle à quatre bits chargeable")
 *Registre parallèle à quatre bits chargeable*

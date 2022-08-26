@@ -116,5 +116,5 @@ compteur passe de 0111 à 1000, la sortie peut passer par des états
 intermédiaires parasites: 0111 $$\rightarrow$$ 0110 $$\rightarrow$$ 1100
 $$\rightarrow$$ 1000.
 
-![img]({{site.baseurl}}/img/rippleT3.svg "Compteur asynchrone")
+![Compteur asynchrone.]({{site.baseurl}}/img/rippleT3.svg "Compteur asynchrone")
 *Compteur asynchrone*

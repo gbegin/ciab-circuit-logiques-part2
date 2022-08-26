@@ -14,7 +14,7 @@ La figure suivante montre l'essentiel d'une mémoire ROM de
 mot sera lu, et la sortie est disponible sur les lignes $$A_3, \ldots,
 A_0$$. 
 
-![img]({{site.baseurl}}/img/proto_rom1_prog.svg "Modèle d'une mémoire ROM")
+![Modèle d'une mémoire ROM.]({{site.baseurl}}/img/proto_rom1_prog.svg "Modèle d'une mémoire ROM")
 *Modèle d'une mémoire ROM*
 
 Pour simplifier la représentation de ce genre de configuration, on

@@ -181,5 +181,5 @@ en agissant sur une porte NAND de chacune des paires de portes. Cette
 entrée est active au niveau bas, c'est pourquoi il y a une indication
 de complément dans son symbole.
 
-![img]({{site.baseurl}}/img/D_front_montant_setasyn.svg "Bascule D avec reset asynchrone")
+![Bascule D avec reset asynchrone.]({{site.baseurl}}/img/D_front_montant_setasyn.svg "Bascule D avec reset asynchrone")
 *Bascule D avec reset asynchrone*
