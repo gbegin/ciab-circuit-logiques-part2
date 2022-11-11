@@ -11,7 +11,7 @@ pour un type de compteur donné. Par exemple, les états d'un compteur
 binaire à deux bits suivent la séquence $$00 \rightarrow 01
 \rightarrow 10 \rightarrow 11 \rightarrow 00 \ldots $$ La sortie
 correspond directement aux bits d'état. On distingue les compteurs
-asynchrones et les compteurs synchrones. Quel que soit le type de
+**asynchrones** et les compteurs **synchrones**. Quel que soit le type de
 compteur, il y a toujours un retour vers l'état initial, car la
 séquence d'états est un cycle.
 
@@ -25,6 +25,9 @@ moins significatif qui déclenche la bascule suivante. La figure ci-bas
 montre un compteur asynchrone construit à partir de bascules T. La
 séquence de sortie est donnée dans le tableau [2](#org783153e). On
 peut voir qu'après huit étapes, la séquence se répète.
+
+![Compteur asynchrone.]({{site.baseurl}}/img/rippleT3.svg "Compteur asynchrone")
+*Compteur asynchrone*
 
 <table id="org783153e" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Tableau 2 :</span> Séquence du compteur</caption>
@@ -115,6 +118,3 @@ les bits d'état ne changent pas tous en même temps. Par exemple, si le
 compteur passe de 0111 à 1000, la sortie peut passer par des états
 intermédiaires parasites: 0111 $$\rightarrow$$ 0110 $$\rightarrow$$ 1100
 $$\rightarrow$$ 1000.
-
-![Compteur asynchrone.]({{site.baseurl}}/img/rippleT3.svg "Compteur asynchrone")
-*Compteur asynchrone*

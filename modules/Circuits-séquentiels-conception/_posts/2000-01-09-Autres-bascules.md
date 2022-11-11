@@ -131,7 +131,7 @@ dans le tableau [9](#org5afbe8e).
 </tbody>
 </table>
 
-Reprenons le tableau de transition d'états pour notre exemple,
+Reprenons le tableau de transition d'états pour notre exemple, tableau
 [56](#org3ed7c99), en ajoutant les signaux à générer pour des
 bascules JK. On obtient alors le tableau [10](#orgec0f763).
 
@@ -337,7 +337,7 @@ normal, comme on peut le voir sur la figure suivante, où de l'état
 
 ## Exemple avec états *one-hot*
 
-Dans cet exemple, on explore l'assignation d'états *one-hot* dans
+Dans l'exemple suivant, on explore l'assignation d'états *one-hot* dans
 laquelle il n'y a qu'un seul bit 1 par code binaire.
 
 Considérons le diagramme d'état suivant.

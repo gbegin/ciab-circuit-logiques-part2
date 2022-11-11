@@ -30,14 +30,14 @@ prochain état et les valeurs de sortie.
 Deux états sont équivalents si, pour chaque combinaison d'entrées, ils
 produisent la même sortie et amènent le système dans le même état ou
 dans un état équivalent. Considérons le diagramme d'état de la figure
-suivante et le tableau d'état correspondant
-[52](#org135cabe).
+suivante et le tableau d'état correspondant (tableau 
+[52](#org1a30b39)).
 
 ![Diagramme d'état avant réduction.]({{site.baseurl}}/img/exemp_simplif_net.svg "Diagramme d'état")
 *Diagramme d'état avant réduction*
 
 <table id="org1a30b39" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption class="t-above"><span class="table-number">Tableau 1 :</span> Tableau d'état</caption>
+<caption class="t-above"><span class="table-number">Tableau 1 :</span> Tableau d'état initial</caption>
 
 <colgroup>
 <col  class="org-left" />
@@ -172,7 +172,7 @@ suivante et le tableau d'état correspondant
 
 En inspectant les différents états, on voit que les états *c* et *f* sont
 équivalents. En remplaçant l'état *f* par l'état *c*, on obtient le
-nouveau tableau d'état [52](#org135cabe).
+nouveau tableau d'état (tableau [52](#org135cabe)).
 
 <table id="org135cabe" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Tableau 2 :</span> Tableau d'état après une simplification</caption>
@@ -291,12 +291,12 @@ nouveau tableau d'état [52](#org135cabe).
 </table>
 
 On voit maintenant que les états *a* et *d* sont équivalents. En
-remplaçant l'état *d* par l'état *a*, on obtient le diagramme d'état
-simplifié [53](#org71ff726). Il n'y a plus de simplification
+remplaçant l'état *d* par l'état *a*, on obtient le tableau d'état
+simplifié (tableau [53](#org71ff726)). Il n'y a plus de simplification
 possible. Nous sommes passés de six états à quatre.
 
 <table id="org71ff726" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<caption class="t-above"><span class="table-number">Tableau 3 :</span> Tableau d'état après simplification</caption>
+<caption class="t-above"><span class="table-number">Tableau 3 :</span> Tableau d'état simplifié</caption>
 
 <colgroup>
 <col  class="org-left" />

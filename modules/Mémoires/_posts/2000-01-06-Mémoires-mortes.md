@@ -25,8 +25,8 @@ l'intersection d'une ligne horizontale et d'une ligne verticale
 signifie que le signal de la ligne horizontale est connecté à une des
 entrées de la porte.  Avec cette schématisation, on peut voir que les
 deux premiers mots stockés dans la mémoire illustrée dans l'exemple
-seraient 0101 et 1101. La même schématisation compacte est aussi
-employée pour des portes ET.
+seraient 0101 et 1101. La même schématisation compacte est s'emploie aussi
+pour des portes ET.
 
 Cette relativement petite mémoire comporte ainsi 64 intersections
 programmables, permettant de définir la valeur des 16 mots de mémoire
