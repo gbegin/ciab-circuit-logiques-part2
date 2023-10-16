@@ -18,9 +18,9 @@ de valider le comportement.
 
 
 
-## Tableau d'états
+## Tableau d'état
 
-Un tableau d'états comporte une ligne par état présent et combinaison
+Un tableau d'état comporte une ligne par état présent et combinaison
 d'entrées. Selon les combinaisons d'entrées possibles, on donne le
 prochain état et les valeurs de sortie.
 
@@ -31,7 +31,8 @@ Deux états sont équivalents si, pour chaque combinaison d'entrées, ils
 produisent la même sortie et amènent le système dans le même état ou
 dans un état équivalent. Considérons le diagramme d'état de la figure
 suivante et le tableau d'état correspondant (tableau 
-[52](#org1a30b39)).
+[52](#org1a30b39)).  On peut voir qu'il s'agit ici d'une machine de
+Mealy, car les valeurs de sortie sont associées aux transitions.
 
 ![Diagramme d'état avant réduction.]({{site.baseurl}}/img/exemp_simplif_net.svg "Diagramme d'état")
 *Diagramme d'état avant réduction*

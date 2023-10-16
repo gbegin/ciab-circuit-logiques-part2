@@ -3,10 +3,10 @@ title: Objectifs
 ---
 # Objectifs
 
--   Pouvoir identifier un circuit logique séquentiel
--   Savoir distinguer entre les circuits séquentiels synchrones et
+-   Identifier un circuit logique séquentiel
+-   Faire la distinction entre les circuits séquentiels synchrones et
     asynchrones
--   Être familier avec les principaux types de loquets, pouvoir en
+-   Se familiariser avec les principaux types de loquets, en
     expliquer le fonctionnement
--   Être familier avec les principaux types de bascules, pouvoir en
+-   Être familier avec les principaux types de bascules, en
     expliquer le fonctionnement

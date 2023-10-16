@@ -23,7 +23,7 @@ du moment. Intuitivement, on peut penser que le nombre d'états
 distincts sera fonction du nombre de valeurs binaires qui seront
 mémorisées. Le comportement d'un système séquentiel est donc
 caractérisé par une séquence temporelle d'entrées, de sorties et de
-valeurs interne d'état.
+valeurs internes d'état.
 
 ![Modèle de circuit séquentiel.]({{site.baseurl}}/img/circuit_seq.png "Modèle de circuit séquentiel")
 *Modèle de circuit séquentiel*
@@ -37,7 +37,7 @@ séquentiel **asynchrone** dépend à tout moment des signaux d'entrée et
 de l'ordre dans lequel ces signaux changent.
 
 Un circuit séquentiel synchrone fait appel à un signal spécial appelé
-**horloge** qui rythme les changement d'état et de sorties afin qu'il se
+**horloge** qui rythme les changements d'état et de sorties afin qu'ils se
 produisent à des instants discrets. Les éléments de mémoire qui
 stockent les valeurs binaires sont appelés **bascules** (*flip-flops* en
 anglais). Il existe différents types de bascules. Nous les étudierons
@@ -48,8 +48,7 @@ circuit séquentiel synchrone.
 ![Modèle de circuit séquentiel synchrone.]({{site.baseurl}}/img/circuit_seq_sync.png "Modèle de circuit séquentiel synchrone")
 *Modèle de circuit séquentiel synchrone*
 
-Le signal d'horloge est typiquement une onde carrée, telle
-qu'illustré sur la figure suivante.
+Le signal d'horloge est typiquement une onde carrée, comme illustré sur la figure suivante.
 
 ![Signal d'horloge en onde carrée.]({{site.baseurl}}/img/horloge.svg "Signal d'horloge")
 *Signal d'horloge*

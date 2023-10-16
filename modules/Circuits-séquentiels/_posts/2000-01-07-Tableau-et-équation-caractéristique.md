@@ -158,15 +158,15 @@ représente l'état présent et $$Q(t+1)$$ l'état suivant.
 
 On peut de même formuler des équations qui décrivent le comportement des bascules. Pour une bascule D, on a
 
-$$ Q(t+1) = D $$.
+$$ Q(t+1) = D $$
 
 Pour une bascule JK, on a
 
-$$ Q(t+1) =J Q^\prime + K^\prime Q $$.
+$$ Q(t+1) =J Q^\prime + K^\prime Q $$
 
 Pour une bascule T, on a
 
-$$ Q(t+1) = T \mbox{ XOR } Q = T Q^\prime + T^\prime Q $$.
+$$ Q(t+1) = T \operatorname{Xor} Q = T Q^\prime + T^\prime Q $$
 
 
 ### Entrées asynchrones
@@ -176,7 +176,7 @@ l'effet n'est pas soumis à l'horloge. Ces entrées sont typiquement
 utilisées pour faire un *reset* ou un *set* de la bascule, par exemple
 pour une remise à zéro initiale d'un circuit séquentiel. Une
 configuration typique est illustrée par la bascule de la figure
-suivante qui comporte une entrée `Reset'` qui permet de forcer l'état
+suivante qui comporte une entrée `Reset'`, laquelle permet de forcer l'état
 en agissant sur une porte NAND de chacune des paires de portes. Cette
 entrée est active au niveau bas, c'est pourquoi il y a une indication
 de complément dans son symbole.

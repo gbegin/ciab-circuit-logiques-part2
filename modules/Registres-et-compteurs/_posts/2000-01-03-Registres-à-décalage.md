@@ -5,7 +5,7 @@ title: Registres à décalage
 ## Registres à décalage
 
 Un registre à décalage consiste en une chaîne de bascules, la sortie
-de l'une reliée à l'entrée de la suivante. La figure ci-bas montre
+de l'une reliée à l'entrée de la suivante. La figure ci-dessous montre
 un registre à décalage de quatre bits. À chaque coup d'horloge,
 l'entrée est insérée dans la première bascule, à droite, et le contenu
 du registre est décalé d'une position vers la gauche. La sortie
@@ -16,13 +16,13 @@ provient de la dernière bascule à droite.
 
 En utilisant un multiplexeur quatre-vers-un pour sélectionner ce qui
 sera inséré dans une bascule, il est possible de concevoir un registre
-à décalage universel. Les différents opérations sont le *maintien*, le
+à décalage universel. Les différentes opérations sont le *maintien*, le
 *décalage à droite* avec entrée $$G$$, le *décalage à gauche* avec entrée
 $$D$$ et le *chargement parallèle*, avec les entrées $$I_i, i=1, \ldots,
 4$$.
 
 Les différentes opérations sont commandées par les deux signaux de
-sélection, tel qu'indiqué dans le tableau [1](#orgbda54ca).
+sélection, comme indiqué dans le tableau [1](#orgbda54ca).
 
 <table id="orgbda54ca" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Tableau 1 :</span> Codes de sélection et opérations</caption>
@@ -48,13 +48,13 @@ sélection, tel qu'indiqué dans le tableau [1](#orgbda54ca).
 
 <tr>
 <td class="org-right">01</td>
-<td class="org-left">Décalage droite</td>
+<td class="org-left">Décalage à droite</td>
 </tr>
 
 
 <tr>
 <td class="org-right">10</td>
-<td class="org-left">Décalage gauche</td>
+<td class="org-left">Décalage à gauche</td>
 </tr>
 
 
@@ -69,7 +69,7 @@ sélection, tel qu'indiqué dans le tableau [1](#orgbda54ca).
 *Registre à décalage universel*
 
 Les registres à décalage sont notamment utilisés pour convertir des
-données parallèles en données sérielles et vice versa, des opérations
+données parallèles en données sérielles et *vice versa*, des opérations
 très utiles dans le contexte d'interfaces de communication. On peut
 également s'en servir pour faire des multiplications ou divisions par
 deux, comme on l'a vu précédemment.

@@ -4,10 +4,10 @@ title: Objectifs
 # Objectifs
 
 
--   Être familier avec les principaux circuits séquentiels classiques:
+-   Se familiariser avec les principaux circuits séquentiels classiques:
     registres, registres à décalage, compteurs
 -   Savoir comment sont implémentées les différentes opérations:
     chargement, remise à zéro, comptage vers le haut/bas, décalage
--   Pouvoir utiliser des compteurs pour générer des séquences de
+-   Utiliser des compteurs pour générer des séquences de
     synchronisation
--   Pouvoir distinguer entre compteur synchrone et compteur asynchrone
+-   Faire la distinction entre compteur synchrone et compteur asynchrone

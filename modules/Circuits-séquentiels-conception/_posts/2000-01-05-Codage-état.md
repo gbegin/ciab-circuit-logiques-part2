@@ -7,11 +7,11 @@ title: Codage des états
 Une fois que le nombre d'états a été réduit, il faut assigner des
 codes binaires aux états. Si on doit coder $$m$$ états, il faudra
 $$n$$ bits, avec $$ 2^n \geq m$$. Si le nombre de combinaisons
-binaires est plus grand que le nombre d'état nécessaires, les
+binaires est plus grand que le nombre d'états nécessaires, les
 combinaisons inutilisées seront considérées comme des cas facultatifs.
 
 Le choix d'une assignation des codes aux états aura des répercussions
-sur la complexité du décodeur de prochain état, et sur le décodeur de
+sur la complexité du décodeur de prochain état et sur le décodeur de
 sortie. Plusieurs options peuvent être envisagées: assigner des codes
 dans l'ordre naturel d'énumération binaire, assigner selon un code
 Gray, ou encore choisir une assignation où il y a un seul bit 1 par

@@ -13,7 +13,7 @@ les sorties nécessaires pour le décodeur d'état, en se basant sur les
 tableaux caractéristiques de la section [Tableaux caractéristiques]({{site.baseurl}}{% post_url modules/Circuits-séquentiels/2000-01-07-Tableau-et-équation-caractéristique %}).
 
 
-## Décodeur de sorties
+## Décodeur de sortie
 
 Une fois que le codage d'état est établi, la conception du décodeur de
 sortie est directe. Un tableau de vérité avec comme entrées les

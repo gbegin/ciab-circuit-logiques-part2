@@ -7,11 +7,11 @@ title: Registres
 Un registre est un groupe de bascules activées par un même signal
 d'horloge. Chaque bascule permet de stocker un bit en
 mémoire. Différentes configurations d'interconnexion entre les
-bascules et éventuellement des composantes combinatoires permettent de
+bascules et éventuellement des composants combinatoires permettent de
 concevoir des types de registres pouvant remplir des rôles variés.
 
 La figure suivante montre un registre parallèle de quatre bits,
-qui permet de stocker 4 valeurs binaires indépendantes. Le schéma du
+qui permet de stocker quatre valeurs binaires indépendantes. Le schéma du
 bas est une représentation symbolique du registre, dans laquelle on
 représente les entrées et sorties comme des vecteurs de quatre bits.
 
@@ -25,12 +25,12 @@ munir de la possibilité de le charger à partir des entrées ou de
 maintenir les valeurs déjà mémorisées. On ajoutera donc une entrée
 *charge* au registre pour contrôler ces opérations.
 
-Comment mettre en oeuvre ce chargement/maintien demande un peu de
+Pour mettre en oeuvre ce chargement/maintien, il faut un peu de
 réflexion. Il serait possible d'agir (à la façon d'un signal *enable*
-via une porte ET par exemple) sur l'entrée d'horloge des bascules
+via une porte ET, par exemple) sur l'entrée d'horloge des bascules
 pour empêcher leur contenu d'être affecté par les entrées. Mais
 alors, on briserait le principe de synchronisation qui veut que tous
-les éléments d'un système soient tous commandés en même temps par une
+les éléments d'un système soient commandés en même temps par une
 même horloge.
 
 La solution consiste à toujours mettre à jour le contenu des bascules: 

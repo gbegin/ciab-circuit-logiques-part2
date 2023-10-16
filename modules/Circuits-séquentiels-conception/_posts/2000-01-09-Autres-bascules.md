@@ -7,7 +7,7 @@ title: Autres types de bascules
 Les fonctions du décodeur de prochain état se formulent naturellement
 en fonction de bascules D.  Pour faire l'implémentation avec des
 bascules JK ou T, il faut pouvoir déterminer les entrées nécessaires
-pour amener les changements d'états requis. Pour ce faire, on
+pour amener les changements d'état requis. Pour ce faire, on
 utilisera des **tableaux d'excitation** qui listent les combinaisons
 d'entrées pour passer d'un état présent $$Q_n$$ à un état prochain
 $$Q_{n+1}$$. Le tableau d'excitation pour une bascule JK est donné
@@ -305,8 +305,7 @@ Ce qui nous donne l'implémentation de la figure suivante.
 
 ## États interdits
 
-Lorsque le nombre d'états nécessaires pour le fonctionnement de la
-machine à état fini est strictement inférieur au nombre total d'états
+Lorsque le nombre d'états nécessaires pour le fonctionnement de l'automate fini est strictement inférieur au nombre total d'états
 possibles avec les bascules utilisées, un certain nombre d'états
 (physiques) ne seront pas utilisés dans le fonctionnement normal du
 circuit séquentiel. On parlera alors d'**états interdits**.  Lors de
@@ -314,8 +313,7 @@ la formulation des tableaux de vérité pour le décodeur de prochain
 état, ces états donneront lieu à des cas facultatifs, qui pourront
 permettre la simplification du circuit combinatoire du décodeur.
 
-Il faut toutefois se méfier de scénarios dans lesquels la machine à
-état pourrait se retrouver dans un tel état interdit en raison d'un
+Il faut toutefois se méfier de scénarios dans lesquels l'automate fini pourrait se retrouver dans un tel état interdit en raison d'un
 dysfonctionnement momentané ou lors de la mise en marche du
 système. Considérons par exemple un circuit séquentiel dont le
 diagramme d'état (tel qu'implémenté après conception) est illustré
@@ -338,7 +336,7 @@ normal, comme on peut le voir sur la figure suivante, où de l'état
 ## Exemple avec états *one-hot*
 
 Dans l'exemple suivant, on explore l'assignation d'états *one-hot* dans
-laquelle il n'y a qu'un seul bit 1 par code binaire.
+laquelle il n'y a qu'un bit 1 par code binaire.
 
 Considérons le diagramme d'état suivant.
 
@@ -538,20 +536,20 @@ C^{n+1} = B^n y
 $$
 
 Le décodeur de prochain état est simplifié, car les bits d'état
-offrent une indication directe de l' état dans lequel la machine se
+offrent une indication directe de l'état dans lequel la machine se
 trouve. Le fonctionnement de la machine entraîne peu de transitions,
-ce qui résulte en une consommation d'énergie réduite, et moins de
-risque de *glitches*. La vitesse de commutation ne dépend pas du
-nombre d'états. Ajouter ou retrancher un état peu se faire sans avoir
-à tout refaire la conception.  L'assignation *one-hot* est
-particulièrement intéressante lorsqu'on est moins limité par le nombre
-de bascules que par le nombre d'éléments combinatoires. 
+ce qui se traduit par une consommation d'énergie réduite et moins de
+risque d'aléas (*glitches*). La vitesse de commutation ne dépend pas du
+nombre d'états. Il est possible d'ajouter ou retrancher un état sans avoir
+à refaire entièrement la conception.  L'assignation *one-hot* est
+particulièrement intéressante lorsqu'il y a moins de contraintes sur le nombre
+de bascules que sur le nombre d'éléments combinatoires. 
 
-Le principal inconvénient est la croissance du nombre de bascules, qui
+Le principal inconvénient de cette approche est la croissance du nombre de bascules, qui
 est linéaire avec le nombre d'états plutôt que logarithmique. Par
 exemple, pour 30 états, il faudra 30 bascules alors qu'avec un
 encodage binaire, il n'en faudrait que cinq. Il faut aussi considérer
-qu'il y a un grand nombre d'états interdits, et prendre les
+qu'il y a un grand nombre d'états interdits et prendre les
 précautions qui s'imposent pour éviter les problèmes de fonctionnement
 coincé.
 

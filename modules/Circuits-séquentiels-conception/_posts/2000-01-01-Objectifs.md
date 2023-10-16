@@ -3,11 +3,11 @@ title: Objectifs
 ---
 # Objectifs
 
--   Pouvoir concevoir un circuit logique séquentiel synchrone à partir
+-   Concevoir un circuit logique séquentiel synchrone à partir
     d'une spécification fonctionnelle
--   Savoir construire un diagramme d'état en fonction d'un besoin
--   Savoir construire un tableau d'état en fonction d'un diagramme d'état
--   Pouvoir réduire le nombre d'état nécessaires
--   Savoir comment assigner des codes binaires aux états et pouvoir
+-   Construire un diagramme d'état en fonction d'un besoin
+-   Construire un tableau d'état en fonction d'un diagramme d'état
+-   Réduire le nombre d'états nécessaires
+-   Assigner des codes binaires aux états et 
     choisir une approche
--   Pouvoir concevoir un décodeur de prochain état et un décodeur de sortie
+-   Concevoir un décodeur de prochain état et un décodeur de sortie

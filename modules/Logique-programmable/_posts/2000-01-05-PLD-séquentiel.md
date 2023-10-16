@@ -4,10 +4,10 @@ title: Logique programmable séquentielle
 
 ### Logique programmable séquentielle
 
-En combinant un dispositif logique programmable (en anglais,
-*Programmable Logic Device*, (PLD)) avec un certain nombre de
+En combinant un **dispositif logique programmable** (en anglais,
+*Programmable Logic Device* (PLD)) avec un certain nombre de
 bascules, il est possible de proposer un circuit programmable
-séquentiel. La configuration générale est telle qu'illustré sur la
+séquentiel. La configuration générale est illustrée sur la
 figure suivante.
 
 ![Modèle de circuit séquentiel programmable.]({{site.baseurl}}/img/circuit_seq_prog.png "Modèle de circuit séquentiel programmable")

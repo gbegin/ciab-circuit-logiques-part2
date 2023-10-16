@@ -21,7 +21,7 @@ Voici quelques simulateurs gratuits.
 
 ### Modelsim/Questa
 
-Des versions de ce simulateur sont offertes par plusieurs fabricants de circuit intégrés programmables:
+Des versions de ce simulateur sont offertes par plusieurs fabricants de circuits intégrés programmables:
 
 Intel:
 
@@ -29,7 +29,7 @@ Intel:
 
 -   Fonctionne sous Windows ou Linux (Red Hat ou Ubuntu)
 -   Un des simulateurs les plus populaires
--   L'utilisation requiert une license (gratuite) spécifique à un ordinateur donné, qu'il faut demander par courriel
+-   L'utilisation requiert une licence (gratuite) spécifique à un ordinateur donné, qu'il faut demander par courriel
 -   L'installation et l'activation comportent plusieurs étapes
 
 Lattice:
@@ -37,8 +37,8 @@ Lattice:
 [iCEcube2 Design Software](http://www.latticesemi.com/icecube2)
 
 -   Fonctionne sous Windows ou Linux (Red Hat)
--   Fait partie d'un suite logicielle en support à la gamme de FPGA du fabricant
--   L'utilisation requiert une license (gratuite) spécifique à un ordinateur donné
+-   Fait partie d'une suite logicielle en support à la gamme de FPGA du fabricant
+-   L'utilisation requiert une licence (gratuite) spécifique à un ordinateur donné
 
 Microchip:
 
@@ -46,17 +46,17 @@ Microchip:
 
 -   Fonctionne sous Windows ou Linux (Red Hat)
 -   Fait partie d'un suite logicielle (Libero) en support à la gamme de FPGA du fabricant
--   L'utilisation requiert une license (gratuite) spécifique à un ordinateur donné
+-   L'utilisation requiert une licence (gratuite) spécifique à un ordinateur donné
 
 
 
 
-### Active-HDL (version étudiant)
+### Active-HDL (version étudiante)
 
 [Free Active-HDL Student Edition](https://www.aldec.com/en/products/fpga_simulation/active_hdl_student)
 
 -   Fonctionne sous Windows
--   License gratuite pour étudiants (on doit indiquer son université)
+-   Licence gratuite pour la communauté étudiante doit indiquer son université)
 -   L'inscription donne accès à une page de téléchargement
 
 
@@ -68,7 +68,7 @@ Microchip:
 
 -   Fonctionne sous Windows ou Linux (Red Hat ou Ubuntu)
 -   Cette suite pour conception de circuits intégrés programmables comporte un simulateur
--   L'utilisation requiert une license (gratuite) spécifique à un ordinateur donné
+-   L'utilisation requiert une licence (gratuite) spécifique à un ordinateur donné
 
 
 
@@ -94,7 +94,7 @@ Ces deux logiciels sont à code source ouvert, donc entièrement gratuits.
 
 [EDA Playground](https://www.edaplayground.com/)
 
--   Cette option, utilisable via un fureteur Web, ne nécessite pas d'installation, et peu donc s'utiliser sous toutes les plateformes
+-   Cette option, utilisable via un fureteur Web, ne nécessite pas d'installation et peut donc s'utiliser sur toutes les plateformes
 -   On doit s'enregistrer
 -   Il est possible de choisir le simulateur
--   On y trouve également des exemples de code
+-   On y trouve également des exemples de codes

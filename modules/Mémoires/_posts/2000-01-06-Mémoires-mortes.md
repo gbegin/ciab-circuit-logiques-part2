@@ -25,10 +25,10 @@ l'intersection d'une ligne horizontale et d'une ligne verticale
 signifie que le signal de la ligne horizontale est connecté à une des
 entrées de la porte.  Avec cette schématisation, on peut voir que les
 deux premiers mots stockés dans la mémoire illustrée dans l'exemple
-seraient 0101 et 1101. La même schématisation compacte est s'emploie aussi
+seraient 0101 et 1101. La même schématisation compacte s'emploie aussi
 pour des portes ET.
 
-Cette relativement petite mémoire comporte ainsi 64 intersections
+Cette mémoire relativement petite comporte ainsi 64 intersections
 programmables, permettant de définir la valeur des 16 mots de mémoire
 de 8 bits chacun.
 
@@ -40,7 +40,7 @@ générer les $$2^k$$ minterms possibles avec ses $$k$$
 entrées. Regrouper avec une porte OU les minterms d'une
 fonction permet d'implémenter cette fonction. Une mémoire ROM permet
 de faire exactement cela sans avoir rien à ajouter, car elle est munie
-d'un décodeur d'entrées et la porte OU de sortie fait déjà partie de
+d'un décodeur d'entrée et la porte OU de sortie fait déjà partie de
 la ROM. On peut donc interpréter le fonctionnement d'une mémoire ROM
 de $$k$$ bits d'adresse et avec des mots de taille $$m$$ comme un
 dispositif qui permet, pour les entrées qui sont ses adresses, de
@@ -58,7 +58,7 @@ Cette approche qui consiste à réaliser une fonction logique
 combinatoire au moyen d'une mémoire qui spécifie, pour chaque
 combinaison d'entrée possible, une valeur de sortie, est largement
 utilisée dans les composants programmables. On parle alors de tableau
-de correspondance (en anglais, *LookUp Table*, (LUT)). Il s'agit ni
+de correspondance (en anglais, *LookUp Table* (LUT)). Il s'agit ni
 plus ni moins que de stocker en mémoire le tableau de vérité de la
 fonction à réaliser. Dans les composants programmables, on utilise
 plutôt des mémoires RAM pour les tableaux de correspondance, afin que
@@ -70,13 +70,13 @@ l'application.
 On distingue quatre grandes approches technologiques pour réaliser des
 mémoires mortes. Leurs usages typiques sont surtout déterminés par la
 façon de les configurer (on dit couramment *programmer*, même s'il
-s'agit d'un intervention au niveau du matériel).
+s'agit d'une intervention sur le plan matériel).
 
 Dans la **programmation par masque**, la mémoire est programmée lors
 de la fabrication de la puce. Le fabricant se base sur un tableau de
 vérité fourni par le client pour établir des connexions qui seront
 implémentées (ou pas) dans le procédé de fabrication via des masques
-qui empêchent la déposition de matériau conducteur sur les couches du
+qui empêchent le dépôt de matériau conducteur sur les couches du
 circuit intégré.  Cette approche convient à la production de masse à
 grand volume.
 
@@ -89,15 +89,15 @@ programmation (ou programmeur) spécialement conçu à cette fin,
 consiste à supprimer les connexions qui ne sont pas nécessaires en
 envoyant des impulsions à forte tension pour faire fondre les fusibles
 de connexions spécifiques. Un fusible fondu (pas de connexion)
-correspondant à un bit 0 dans la mémoire. Cette programmation est
-bien entendu irréversible: impossible de reconnecter une fois que le
+correspond à un bit 0 dans la mémoire. Cette programmation est
+bien entendu irréversible: impossible de rétablir la connexion une fois que le
 fusible est fondu.
 
-Avec un **PROM** (pour *Programmable ROM*), il est possible d'effacer la
+Avec une **PROM** (pour *Programmable ROM*), il est possible d'effacer la
 configuration dans son ensemble en soumettant la puce à une lumière
-ultraviolet pendant un certain temps. Ce bombardement énergétique
+ultraviolette pendant un certain temps. Ce bombardement énergétique
 permet de décharger les grilles flottantes des dispositifs qui
-implémente les connexions. La mémoire PROM peut être reconfigurée de
+implémentent les connexions. La mémoire PROM peut être configurée de
 nouveau.
 
 Avec la **programmation électrique**, il est possible de reconfigurer

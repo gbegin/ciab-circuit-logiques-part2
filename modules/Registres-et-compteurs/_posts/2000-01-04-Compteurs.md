@@ -21,7 +21,7 @@ séquence d'états est un cycle.
 Dans un compteur binaire asynchrone, la sortie d'une bascule de poids
 moins significatif est acheminée à l'entrée d'horloge de la bascule
 suivante. C'est la transition de la sortie de la bascule de poids
-moins significatif qui déclenche la bascule suivante. La figure ci-bas
+moins significatif qui déclenche la bascule suivante. La figure ci-dessous
 montre un compteur asynchrone construit à partir de bascules T. La
 séquence de sortie est donnée dans le tableau [2](#org783153e). On
 peut voir qu'après huit étapes, la séquence se répète.
@@ -113,7 +113,7 @@ peut voir qu'après huit étapes, la séquence se répète.
 </table>
 
 Les compteurs asynchrones sont très simples, mais l'inconvénient est
-que les transitions d'états ne sont pas synchrones. En particulier,
+que les transitions d'état ne sont pas synchrones. En particulier,
 les bits d'état ne changent pas tous en même temps. Par exemple, si le
 compteur passe de 0111 à 1000, la sortie peut passer par des états
 intermédiaires parasites: 0111 $$\rightarrow$$ 0110 $$\rightarrow$$ 1100

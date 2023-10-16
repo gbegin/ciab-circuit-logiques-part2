@@ -5,8 +5,8 @@ title: Compteur synchrone
 ## Compteur synchrone
 
 Dans un compteur synchrone, toutes les bascules sont commandées par un
-même signal d'horloge, et les changements d'états sont
-synchronisés. Les changements d'états sont contrôlés par les signaux
+même signal d'horloge et les changements d'état sont
+synchronisés. Les changements d'état sont contrôlés par les signaux
 d'entrée appliqués aux bascules, comme dans le fonctionnement normal
 d'un circuit séquentiel synchrone.
 
@@ -145,7 +145,7 @@ $$  Z_1^{n+1} = Z_0^{n} \cdot (Z_1^{n})^\prime + (Z_0^{n})^\prime \cdot Z_1^n $$
 
 $$  Z_0^{n+1} = (Z_0^{n})^\prime $$
 
-Le schéma est donné à la figure suivante.
+Le schéma correspondant est donné à la figure suivante.
 
 ![Schéma logique du compteur à 3 bits.]({{site.baseurl}}/img/compt8.svg "Schéma logique du compteur à 3 bits")
 *Schéma logique du compteur à 3 bits*
@@ -174,13 +174,13 @@ Le compteur à quatre bits de la figure suivante a été conçu
 selon cette approche, à partir de bascules JK.  L'utilisation d'une
 porte ET par bascule permet de mettre en oeuvre les
 conditions. L'entrée $$E$$ est un contrôle *enable* pour activer le
-comptage. On a aussi prévu une sortie *Prochain* pour pouvoir
+comptage. On a aussi prévu une sortie `Prochain` pour pouvoir
 connecter en cascade d'autres compteurs.
 
 ![Schéma logique du compteur à 4 bits.]({{site.baseurl}}/img/compt_4bits.svg "Schéma logique du compteur à 4 bits")
 *Schéma logique du compteur à 4 bits*
 
-Si on réfléchit de la même façon au comptage vers le bas, on constate
+Si on réfléchit de la même façon pour le comptage vers le bas, on constate
 que la règle devient:
 
 > la bascule d'un bit $$Z_i$$ doit changer d'état
@@ -193,8 +193,8 @@ complémentées des bascules précédentes.
 
 ### Compteur bidirectionnel
 
-En combinant les deux conditions au moyen d'un multiplexeur deux-vers-
-un, il est facile de concevoir un compteur haut/bas, tel qu'illustré
+En combinant les deux conditions au moyen d'un multiplexeur deux-vers-un, 
+il est facile de concevoir un compteur haut/bas, comme illustré
 sur la figure suivante.
 
 ![Schéma logique du compteur haut/bas à 4 bits.]({{site.baseurl}}/img/compt_updown.svg "Schéma logique du compteur haut/bas à 4 bits")

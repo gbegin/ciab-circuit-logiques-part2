@@ -4,26 +4,26 @@ title: Lecture et écriture
 
 ### Lecture et écriture
 
-L'opération choisie, écriture ou lecture, est commandée par un ou des entrées à cet effet. L'accès à un espace-mémoire (un mot) se fait selon une séquence bien précise. Pour une écriture:
+L'opération choisie, écriture ou lecture, est commandée par une ou des entrées à cet effet. L'accès à un espace mémoire (un mot) se fait selon une séquence bien précise. Pour une écriture:
 
-1.  Les bits d'adresse du mot sont appliqués aux lignes d'adresses.
+1.  Les bits d'adresse du mot sont appliqués aux lignes d'adresse.
 2.  Les données à écrire sont appliquées aux lignes d'entrée.
-3.  On active l'entrée `Écriture`.
+3.  On active l'entrée de commande `Écriture`.
 
-Les données de l'entrée sont alors stockées dans la case-mémoire adressée.
+Les données de l'entrée sont alors stockées dans la case mémoire adressée.
 
 Pour une lecture:
 
-1.  Les bits d'adresse du mot sont appliqués aux lignes d'adresses.
-2.  On active l'entrée `Lecture`.
+1.  Les bits d'adresse du mot sont appliqués aux lignes d'adresse.
+2.  On active l'entrée de commande `Lecture`.
 
-Les données présentes dans la case-mémoire adressée sont ensuite
+Les données présentes dans la case mémoire adressée sont ensuite
 disponibles à la sortie de la mémoire.
 
-Les mémoires disponibles sur le marché optent souvent pour une
+Les mémoires offertes sur le marché optent souvent pour une
 combinaison des signaux de contrôle, avec un seul signal qui détermine
-le sens de l'action, comme on peut le voir dans le tableau
-[1](#org472ff24). Le signal `Lecture`, parfois appelé `Chip select`,
+le sens de l'action, comme le montre le tableau
+[1](#org472ff24). Le signal `Enable`, parfois appelé `Chip select`,
 permet d'activer une mémoire dans un ensemble où plusieurs mémoires
 sont utilisées.
 
@@ -72,7 +72,7 @@ sont utilisées.
 ### Bus de données
 
 Pour acheminer les données lues ou à écrire dans la mémoire, on
-utilise des tampons émetteur-récepteurs de bus,
+utilise des tampons émetteurs-récepteurs de bus,
 organisés en vecteur, pour créer un **bus de données** qui permet un
 aller-retour des données, selon le sens de l'action. Cela permet de
 diminuer de moitié le nombre de connexions nécessaires pour l'échange

@@ -14,14 +14,14 @@ caractéristique de flexibilité essentielle. Le temps d'accès aux
 données est le même, quel que soit l'endroit dans la mémoire où un mot
 en particulier est stocké. Les mots sont généralement constitués d'un
 nombre de bits multiple de huit: 8, 16 ou 32 bits sont des tailles de
-mots courantes. Un groupe de huit bits est appelé **octet**.
+mot courantes. Un groupe de huit bits est appelé **octet**.
 
 L'adressage se fait au moyen d'un **décodeur d'adresses**, qui est
-simplement un décodeur binaire tel que vu préécédemment. Le
+simplement un décodeur binaire tel que nous l'avons vu précédemment. Le
 nombre de bits d'adresse détermine la capacité (en nombre de mots) de
 la mémoire: pour $$k$$ adresses, on aura $$2^k$$ mots distincts. Les
 tailles de mémoire sont souvent exprimées au moyen de multiplicateurs:
-K (kilo) correspondant à $$2^{10}$$, M (mega) correspondant à $$2^{20}$$
+K (kilo) correspondant à $$2^{10}$$, M (méga) correspondant à $$2^{20}$$
 ou G (giga) correspondant à $$2^{30}$$.
 
 ![Schéma-bloc d'une mémoire.]({{site.baseurl}}/img/memoire.png "Schéma d'une mémoire")

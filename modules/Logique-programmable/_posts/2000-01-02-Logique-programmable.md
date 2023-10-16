@@ -2,10 +2,9 @@
 title: 
 ---
 
-# Logique programmable
+# Dispositifs programmables
 
-
-On a vu qu'une mémoire ROM est un dispositif logique programmable qui,
+Nous avons vu qu'une mémoire ROM est un dispositif logique programmable qui,
 grâce à la matrice d'interconnexion entre son décodeur (qui génère
 tous les minterms) et les portes OU de sortie, permet de réaliser des
 fonctions logiques arbitraires. D'autres composants utilisent à divers

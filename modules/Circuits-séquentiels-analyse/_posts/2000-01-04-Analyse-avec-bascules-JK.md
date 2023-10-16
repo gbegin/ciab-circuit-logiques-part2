@@ -13,10 +13,12 @@ chacune des bascules. L'exemple suivant illustre la procédure.
 
 ### Exemple avec bascules JK
 
+Considérons le circuit séquentiel de la figure suivante.
+
 ![Exemple de circuit séquentiel avec des bascules JK.]({{site.baseurl}}/img/seq_JK.svg "Exemple circuit séquentiel JK")
 *Exemple de circuit séquentiel avec des bascules JK*
 
-À partir des expression des entrées $$J$$ et $$K$$ suivantes:
+À partir des expressions des entrées $$J$$ et $$K$$ suivantes:
 
 $$ J_0 = (q_1^{n})^\prime $$
 
